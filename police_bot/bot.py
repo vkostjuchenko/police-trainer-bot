@@ -9,7 +9,9 @@ from telegram.ext import (
 )
 import random
 
-TOKEN = "8390342303:AAF_m7k1B3SguXeDiXR7MNE3FxR3RBw2Wi4"
+TOKEN = "import os
+TOKEN = os.environ.get("BOT_TOKEN")
+"
 
 (
     START,
@@ -229,3 +231,4 @@ conv = ConversationHandler(
 
 app.add_handler(conv)
 app.run_polling()
+
